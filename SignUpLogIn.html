@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="This is an index webpage"/>
+	<meta name="keywords" content="HTML5, Javascript, CSS"/>
+	<meta name="author" content="David Stare"/>
+	<link href="styles/style.css" rel="stylesheet"/>
+	<title>Sign Up or Log In</title>
+</head>
+	
+<body> 
+<-- THIS IS THE SignUp/LogIn Page
+	-->
+
+	<header>
+	<h1 id="apple">Sign Up or Log In</h1>
+	<img class="logo" src="styles/images/logo.jpg" alt="logo"  height = "200" width="350"/>
+	<nav>
+		 <a href="HomePage.html">Home Page</a> 
+         <a href="SymptomsPage.html">Check Ya Health</a> 
+		 <a href="DoctorSearch.html">Doctors Near You</a>
+		 <a href="mailto:102079989@student.swin.edu.au">Join Our Email Group</a>
+         <a href="AboutUs.html">About Us</a>
+      </nav>
+	</header>
+	
+	<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+	
+	<p><label for="JFN">Email: </label> 
+		<input type="text" name= "Job Reference Number" id="JFN" maxlength="5" size="10" required="required" pattern="([a-zA-Z0-9]*){5}"/>
+	</p>
+	<p><label for="firstName">User name</label> 
+			<input type="text" name="First Name" id="firstName" required="required" pattern="([a-zA-Z]*){1,19}"/>
+	</p>
+	<p><label for="lastName">Password</label>
+		<input type="text" name="Last Name" id="lastName" required="required" pattern="([a-zA-Z]*){1,19}"/>
+	</p>
+	
+	<p><label for="lastName">Repeat Password</label>
+		<input type="text" name="Last Name" id="lastName" required="required" pattern="([a-zA-Z]*){1,19}"/>
+	</p>
+	
+	<p><label for="applyDate">Date</label>
+	<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" required="required"/></p>
+	
+	</form>
+		
+		
+		
+		<figure>
+		<img src="images/mycat.jpg" alt="Pic of me" width = "200" height = "350"/>
+		<figcaption>This Is Me</figcaption>
+	</figure>
+	</article>
+	<footer> 
+	<p id="footerPart">By law we are required to tell you that we are not responsible for any damages that may
+	be caused by our technicians.</p>
+	</footer>
+	
+</body>
+
+</html>

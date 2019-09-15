@@ -1,0 +1,160 @@
+/*
+filename: style.css
+Creator: Andrew, David Stare
+Created: ???
+last modified: ???
+description: To design the imagery of the MadDrugsMD website
+*/
+
+body {font-family: Merriweather, sans-serif; font-size: 12px; font-style: normal;}
+h2, h3, h4, h5. h6 {font-family:Times New Roman, Georgia, serif; font-style: normal;}
+h1 {font-family: Merriweather; font-size: 20px; font-style: bold;}
+footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
+
+.menu {
+		text-align: center;
+		width: 100%;
+		display: inline;
+		padding: 0 10px 0 10px;
+		letter-spacing: 0.1em;
+		border: 2px solid black;
+		color: black;
+		font-weight: bold;
+		background-color: white;
+}
+
+.center {
+	text-align: center;
+	color: #626262;
+	font-size: larger%;
+}
+
+.conbox {
+		width: 40%;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: center;
+		max-width: 980px;
+		margin: 40px;
+		margin-left: 400px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 15px;
+		position: relative;
+		top: 110px;
+}
+
+.conbox2 {
+		width: 70%;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: center;
+		max-width: 980px;
+		margin: 50px;
+		margin-left: 100px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}
+	
+.conbox3 {
+		width: 70%;
+		height: 50em;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: center;
+		max-width: 980px;
+		margin: 50px;
+		margin-left: 100px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}
+
+.conbox4 {
+		width: 70%;
+		height: 10em;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: center;
+		max-width: 980px;
+		margin: 50px;
+		margin-left: 100px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}		
+
+.conbox4 {
+		width: 40%;
+		height: 55em;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: left;
+		max-width: 980px;
+		margin: 50px;
+		margin-left: 305px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}	
+
+.menubox {
+		width: 60%;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		text-align: center;
+		max-width: 980px;
+		margin: 10px;
+		margin-left: 450px;
+		margin-right: auto;
+		background-color: #a6a6a6;
+		padding: 20px;
+}
+
+.ad-box {
+		width: 50%;
+		float: right;
+		background-color: #666666;
+		text-align: center;
+		margin: 50px;
+		margin-left: 0px;
+		margin-right: 290px;
+		border: 2px solid black;
+		padding: 20px;
+}
+
+.w-box {
+		width: 40%;
+		float: right;
+		background-color: #666666;
+		text-align: center;
+		margin: 50px;
+		margin-left: 0px;
+		margin-right: 255px;
+		border: 2px solid black;
+		padding: 20px;
+}
+
+.signin-box {
+		text-align: center;
+		border: 2px solid black;
+		width: 5%;
+		padding: 0 15px 0 15px;
+		padding: 5px;
+		letter-spacing: 0.1em;
+		color: black;
+		font-weight: bold;
+		background-color: #f2f2f2;
+		margin: 30px;
+		float: right;
+}
+
+
+	
+	
