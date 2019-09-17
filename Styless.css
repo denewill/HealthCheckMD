@@ -91,7 +91,22 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 
 .conbox4 {
 		width: 40%;
-		height: 55em;
+		height: 60em;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: left;
+		max-width: 980px;
+		margin: 50px;
+		margin-left: 305px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}	
+
+.conbox5 {
+		width: 40%;
+		height: 10em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
 		background-color: #737373;
@@ -139,6 +154,18 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		margin-right: 255px;
 		border: 2px solid black;
 		padding: 20px;
+}
+
+.wb-box {
+		width: 40%;
+		float: right;
+		background-color: #666666;
+		text-align: center;
+		margin: 50px;
+		margin-left: 0px;
+		margin-right: -30px;
+		border: 2px solid black;
+		padding: 10px;
 }
 
 .signin-box {
