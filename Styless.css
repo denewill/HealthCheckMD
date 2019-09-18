@@ -104,6 +104,36 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		padding: 100px;
 }	
 
+.conbox6 {
+		width: 40%;
+		height: 30em;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: left;
+		max-width: 980px;
+		margin: 50px;
+		margin-left: 305px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}	
+
+.conbox7 {
+		width: 70%;
+		height: 40em;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: left;
+		max-width: 980px;
+		margin: 50px;
+		margin-left: -10px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}	
+
 .menubox {
 		width: 60%;
 		float: left;
