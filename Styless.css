@@ -23,6 +23,21 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		background-color: white;
 }
 
+.menu2 {
+		text-align: center;
+		width: 100%;
+		display: inline;
+		padding: 0 10px 0 10px;
+		letter-spacing: 0.1em;
+		border: 2px solid black;
+		margin: -90px;
+		margin-left: 410px;
+		margin-right: auto;
+		color: black;
+		font-weight: bold;
+		background-color: white;
+}
+
 .center {
 	text-align: center;
 	color: #626262;
@@ -36,7 +51,23 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		background-color: #737373;
 		text-align: center;
 		max-width: 980px;
-		margin: -90px;
+		margin: -155px;
+		margin-left: 400px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 15px;
+		position: relative;
+		top: 110px;
+}
+
+.menubox2 {
+		width: -40%;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: center;
+		max-width: 980px;
+		margin: -85px;
 		margin-left: 400px;
 		margin-right: auto;
 		border: 2px solid black;
@@ -61,13 +92,14 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 	
 .conbox3 {
 		width: 35%;
-		height: 40em;
+		height: 30em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
 		background-color: #737373;
 		text-align: left;
 		max-width: 980px;
-		margin: 50px;
+		margin: -20px;
+		margin-bottom: 40px;
 		margin-left: 345px;
 		margin-right: auto;
 		border: 2px solid black;
@@ -134,6 +166,21 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		padding: 100px;
 }	
 
+.conbox8 {
+		width: 20%;
+		height: 5em;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #737373;
+		text-align: left;
+		max-width: 980px;
+		margin: 50px;
+		margin-left: 450px;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}	
+
 .img {
 		background-image: 0 !important;
 		width: 15%;
@@ -167,6 +214,20 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		padding: 20px;
 }
 
+.title-box2 {
+		width: 30%;
+		float: right;
+		background-color: #C7EA89;
+		text-align: center;
+		color: #323430;
+		font-size: larger%;
+		margin-top: 10px;
+		margin-left: 0px;
+		margin-right: 440px;
+		border: 2px solid black;
+		padding: 20px;
+}
+
 .ad-box {
 		width: 50%;
 		float: right;
@@ -196,7 +257,7 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		float: right;
 		background-color: #666666;
 		text-align: center;
-		margin: 50px;
+		margin: 20px;
 		margin-left: 0px;
 		margin-right: -30px;
 		border: 2px solid black;
@@ -211,6 +272,18 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		margin: 50px;
 		margin-left: 0px;
 		margin-right: 120px;
+		border: 2px solid black;
+		padding: 10px;
+}
+
+.wbz-box {
+		width: 40%;
+		float: right;
+		background-color: #666666;
+		text-align: center;
+		margin: -20px;
+		margin-left: 0px;
+		margin-right: -50px;
 		border: 2px solid black;
 		padding: 10px;
 }

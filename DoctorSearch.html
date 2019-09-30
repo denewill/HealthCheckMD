@@ -13,12 +13,12 @@
 <a href="SignUpLogin.html" class="signin-box">Sign in</a>
 </nav>
 <div class="title-box"><h1>HealthCheckMd</h1></div>
-<div class="conbox">
+<div class="menubox2">
 <nav>
 	<a href="AboutUs.html" class="menu">About us</a>
 	<a href="DoctorSearch.html" class="menu">Doctor search</a>
 	<a href="SymptomsPage.html" class="menu">Check your symptoms</a>
-	<a href="" class="menu">Empty</a>
+	<a href="Result.html" class="menu">Result</a>
 	<a href="" class="menu">Empty</a>
 </nav></div>
 	<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
@@ -28,10 +28,14 @@
 	be caused by our technicians.</p></div>
 	<h1>Search for a doctor</h1>
 	<p><label for="JFN">Suburb: </label> 
-		<input type="text" name= "Job Reference Number" id="JFN" maxlength="5" size="10" required="required" pattern="([a-zA-Z0-9]*){5}"/>
+		<input type="text" name= "Suburb" id="JFN" maxlength="5" size="10" required="required" pattern="([a-zA-Z0-9]*){5}"/>
 	</p>
-	<p><label for="applyDate">Date</label>
-	<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" required="required"/></p>
+	<p><label for="JFN">Address: </label> 
+		<input type="text" name= "Address" id="JFN" maxlength="5" size="10" required="required" pattern="([a-zA-Z0-9]*){5}"/>
+	</p>
+	<p><label for="JFN">Post code: </label> 
+		<input type="number" name= "Post code" id="JFN" maxlength="4" size="10" required="required" pattern = "[0-9]"/>
+	</p>	
 	</form></div>
 </body>
 <div class="ad-box"> 
