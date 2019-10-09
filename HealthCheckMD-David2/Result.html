@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"	content="Results page" />
+	<meta name="keywords"		content="HTML, CSS, Javascript" />
+	<meta name="author"			content="Andrew Andrew" />
+	<title>Results Page</title>
+	<style>
+		body {
+		  background-color: linen;
+		}
+		h1 {
+		  color: maroon;
+		  margin-left: 40px;
+		}
+		table, th, td{
+			border:1px solid purple;
+		}
+	</style>	
+	
+</head>
+
+<body style="background-color: #e6e6e6">
+	<nav>
+<a href="SignUpLogin.html" class="signin-box">Sign in</a>
+</nav>
+<a href="home.html"><img class="img" src="/Codes/MaddrugsMd/Image/logo.png" title="Beta" /></a>
+<div class="title-box"><h1>HealthCheckMd</h1></div>
+<div class="conbox">
+<nav>	
+	<a href="SymptomsPage.html" class="menu">Check your symptoms</a>
+	<a href="Symptoms.html" class="menu">Symptoms</a>
+	<a href="Result.html" class="menu">Result</a>
+	<a href="DoctorSearch.html" class="menu">Doctor search</a>
+	<a href="AboutUs.html" class="menu">About us</a>
+</nav></div>
+
+
+<?php
+	//require_once ("settings.php"); //this line is only required for the value of the parameters in the next line
+	
+	$conn = @mysqli_connect ($host, $user, $pwd, $sql_db);
+	
+	if(!$conn){
+		
+		echo"<p style="font-size: 12px">Database connection failure</p>";
+	}
+	else {
+		
+		$sql_table = "SymptomsDatabase";   //name of the database table
+		
+		$query = "select EntryNumber, Weight, Height, BMI, CurrentDisease, SugarLevel, PastMedicalHistory, PastSurgery, HIV, CurrentlyUsingMedicines, Symptoms FROM SymptomsDatabase ORDER BY EntryNumber"; //query to return data for user
+		
+		$result = mysqli_query($conn, $query);
+		
+		if(!$result) {
+			echo "<p style="font-size: 12px">Something is wrong with ", $query, "</p>";
+		} else {
+			echo "<table border=\"1\" style="font-size: 12px">\n";
+			echo "<caption style="font-size: 12px">This is Your Past Medical Records</caption>";
+			echo "<tr>\n "
+				."<th scope=\"col\">Entry Number </th>"
+				."<th scope=\"col\">Weight </th>"
+				."<th scope=\"col\">Height </th>"
+				."<th scope=\"col\">BMI </th>"				
+				."<th scope=\"col\">Current Disease </th>"
+				."<th scope=\"col\">Sugar Level </th>"
+				."<th scope=\"col\">Past Medical History </th>"
+				."<th scope=\"col\">Past Surgery </th>"
+				.":<th scope=\"col\">HIV? </th>"
+				."<th scope=\"col\">Currently Using any Medicines </th>"
+				."<th scope=\"col\">Symptoms </th>"
+				."</tr>\n";
+			while ($row = mysqli_fetch_assoc($result)){
+				echo "<tr>\n ";
+				echo "<td>",$row["EntryNumber"],"</td>\n";
+				echo "<td>",$row["Weight"],"</td>\n";
+				echo "<td>",$row["Height"],"</td>\n";
+				echo "<td>",$row["BMI"],"</td>\n";
+				echo "<td>",$row["CurrentDisease"],"</td>\n";
+				echo "<td>",$row["SugarLevel"],"</td>\n";
+				echo "<td>",$row["PastMedicalHistory"],"</td>\n";
+				echo "<td>",$row["PastSurgery"],"</td>\n";
+				echo "<td>",$row["HIV"],"</td>\n";
+				echo "<td>",$row["CurrentlyUsingMedicines"],"</td>\n";
+				echo "<td>",$row["Symptoms"],"</td>\n";
+				echo "</tr>\n";
+			}
+			echo "</table>\n ";
+			mysqli_free_result($result);
+		}
+		mysqli_close($conn);
+	}
+
+?>
+
+		
+
+</body>
+
+</html>
