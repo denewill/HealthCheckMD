@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"	content="Home page" />
+	<meta name="keywords"		content="HTML, CSS, Javascript" />
+	<meta name="author"			content="Andrew Andrew" />
+		<link href="Styles/styless.css" rel="stylesheet" />
+</head>
+<body style="background-color: #e6e6e6">
+<nav>
+<a href="SignUpLogin.html" class="signin-box">Sign in</a>
+</nav>
+<a href="home.html"><img class="img" src="/Codes/MaddrugsMd/Image/logo.png" title="Beta" /></a>
+<div class="title-box3"><h1>HealthCheckMd</h1></div>
+<div class="menubox2">
+<nav>
+	<a href="SymptomsPage.html" class="menu">Check your symptoms</a>
+	<a href="Symptoms.html" class="menu">Symptoms</a>
+	<a href="Result.html" class="menu">Result</a>
+	<a href="DoctorSearch.html" class="menu">Doctor search</a>
+	<a href="AboutUs.html" class="menu">About us</a>
+</nav></div>
+	<div class="conbox5">
+	<h1 id="apple">Check ya Health</h1>
+	<article>
+	<h2>Work With Us!</h2>
+		<p class="applyClass">We have an easy-to-fill-out form below</p>
+	</article>
+	
+	<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+	<p><label for="firstName">First Name</label> 
+			<input type="text" name="First Name" id="firstName" required="required" pattern="([a-zA-Z]*){1,19}"/>
+	</p>
+	<p><label for="lastName">Last Name</label>
+		<input type="text" name="Last Name" id="lastName" required="required" pattern="([a-zA-Z]*){1,19}"/>
+	</p>
+	
+	<p><label for="applyDate">Date of birth</label>
+	<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" required="required"/></p>
+	
+	
+	<fieldset><legend>Gender</legend>
+			<label><input type="radio" name="gender" value="Male" checked="checked"/>Male</label>
+			<label><input type="radio" name="gender" value="Female"/>Female</label>
+	</fieldset>
+	
+	
+	<p><label for="streetAdd">Street Address</label> 
+			<input type="text" name="Street Address" id="streetAdd" required="required" pattern="([0-9a-zA-Z]*){1,39}"/>
+	</p>
+	<p><label for="subTown">Suburb/town</label>
+		<input type="text" name="Suburb/town" id="subTown" required="required" pattern="([a-zA-Z]*){1,39}"/>
+	</p>
+	<p><label for="postcode">Postcode</label>
+			<input type="text" name="Postcode" id="postcode" required="required" pattern="\d{4}"/></p>
+	
+	
+	<p><label for="userEmail">Email</label>
+	<input type="email" id="userEmail" placeholder="Please enter your email" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+	</p>
+	<p><label for="pNumber">Phone number</label>
+			<input type="text" name="Phone Number" id="pNumber" pattern="\d{8,12}" required="required"/></p>
+	<p><label for="hiv">Do you have HIV/AIDS?</label>
+		<select name="hiv" id="hiv" required="required">
+			<option value=""></option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+			<option value="nothing">I don't know</option>
+		</select>
+	</p>
+	<p><label for="height">Height</label>
+			<input type="number" name="Height" id="height" pattern="\d{8,12}"/></p>
+	<p><label for="weight">Weight</label>
+			<input type="number" name="Weight" id="weight" pattern="\d{8,12}"/></p>
+	<p><label for="divs">Current disease</label>
+		<select name="divs" id="divs" required="required">
+			<option value=""></option>
+			<option value="dementia">Dementia</option>
+			<option value="prostate">Cancer</option>
+			<option value="ebola">Ebola</option>
+			<option value="celiac">Celiac</option>
+			<option value="hepatitis">Hepatitis B/C</option>
+			<option value="others">Others</option>
+			<option value="nothing">I don't know</option>
+		</select>
+	</p>
+	<p><label for="suga">Sugar level</label>
+		<input type="number" name="suga" id="suga" pattern="\d{8,12}"/></p>
+	<p><label for="oskill">Past medical history/surgery<br /></label>
+		<textarea placeholder="Your past medical history or Your past surgeries that you had" id="oskill" name="oskill" rows="4" cols="50">
+		</textarea></p>	
+	<p><label for="oskill">Are you currently taking any medicines?<br /></label>
+		<textarea placeholder="Types of medicines" id="oskill" name="oskill" rows="4" cols="50">
+		</textarea></p>
+	<nav>
+	<input type="submit" value="Apply" />
+	</form></div>
+	</footer>
+</body>
+<div class="ad-box"> 
+<p>Advertisement</p></div>
+
+</html>
