@@ -98,14 +98,14 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		}
 		
 .conbox {
-		width: 40%;
+		width: 43%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
 		background-color: #737373;
 		text-align: center;
 		max-width: 980px;
 		margin: -155px;
-		margin-left: 31%;
+		margin-left: 27%;
 		margin-right: auto;
 		border: 2px solid black;
 		padding: 15px;
@@ -114,14 +114,14 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 }
 
 .menubox2 {
-		width: -40%;
+		width: 40%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
 		background-color: #737373;
 		text-align: center;
 		max-width: 980px;
-		margin: -85px;
-		margin-left: 33%;
+		margin-bottom: 80%;
+		margin-left: 31%;
 		margin-right: auto;
 		border: 2px solid black;
 		padding: 15px;
@@ -224,45 +224,48 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 }
 
 .conbox4 {
-		width: 40%;
-		height: 5em;
+		width: 35%;
+		height: 10em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
 		background-color: #737373;
 		text-align: left;
 		max-width: 980px;
-		margin: 50px;
-		margin-left: 26%;
+		margin: -20px;
+		margin-bottom: 40px;
+		margin-left: 29%;
 		margin-right: auto;
 		border: 2px solid black;
 		padding: 100px;
 }	
 
 .conbox5 {
-		width: 40%;
+		width: 35%;
 		height: 60em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
 		background-color: #737373;
 		text-align: left;
 		max-width: 980px;
-		margin: 50px;
-		margin-left: 25%;
+		margin: -20px;
+		margin-bottom: 40px;
+		margin-left: 29%;
 		margin-right: auto;
 		border: 2px solid black;
 		padding: 100px;
 }	
 
 .conbox6 {
-		width: 40%;
-		height: 30em;
+		width: 35%;
+		height: 220em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
 		background-color: #737373;
 		text-align: left;
 		max-width: 980px;
-		margin: 50px;
-		margin-left: 26%;
+		margin: -20px;
+		margin-bottom: 40px;
+		margin-left: 29%;
 		margin-right: auto;
 		border: 2px solid black;
 		padding: 100px;
@@ -352,14 +355,14 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 }
 
 .title-box {
-		width: 30%;
+		width: 37%;
 		float: right;
 		background-color: #C7EA89;
 		text-align: center;
 		color: #323430;
 		font-size: larger%;
 		margin-top: 1%;
-		margin-left: 0px;
+		margin-left: auto;
 		margin-right: 23%;
 		border: 2px solid black;
 		padding: 20px;
@@ -372,9 +375,9 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		text-align: center;
 		color: #323430;
 		font-size: larger%;
-		margin: -10%;
+		margin: 9%;
 		margin-top: 5%;
-		margin-left: 0px;
+		margin-left: 0%;
 		margin-right: 24.8%;
 		border: 2px solid black;
 		padding: 20px;
@@ -410,13 +413,25 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 }
 
 .ad-box {
+		width: 45%;
+		float: right;
+		background-color: #666666;
+		text-align: center;
+		margin: 2%;
+		margin-left: 7%;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 20px;
+}
+
+.ad-box-2 {
 		width: 50%;
 		float: right;
 		background-color: #666666;
 		text-align: center;
 		margin: 2%;
-		margin-left: 0%;
-		margin-right: 22%;
+		margin-left: 3%;
+		margin-right: auto;
 		border: 2px solid black;
 		padding: 20px;
 }
@@ -491,9 +506,10 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		color: black;
 		font-weight: bold;
 		background-color: #f2f2f2;
-		margin: 30px;
+		margin-bottom: 3%;
 		float: right;
 }
+
 
 @media only screen and (max-width: 1600px) {
 	.conbox {
@@ -549,9 +565,10 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		
 }
 	
+
 @media only screen and (max-width: 1920px) {
 	.conbox {
-		margin-left: 32%;
+		margin-left: 31%;
 	}
 	.conbox3 {
 		margin: -20px;
@@ -610,7 +627,10 @@ footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 		margin-left: 31.5%;
 	}
 	.ad-box {
-		margin-left: 8%;
+		margin-right: 22.5%;
+	}
+	.ad-box-2 {
+		margin-right: 21.6%;
 	}
 }		
 		
