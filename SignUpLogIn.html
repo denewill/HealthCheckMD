@@ -8,22 +8,34 @@
 	<meta name="author"			content="Andrew Andrew" />
 		<link href="Styles/styless.css" rel="stylesheet" />
 		<script type="text/javascript" src="/Codes/MaddrugsMd/Javascript/signup.js"></script>
+		<script type="text/javascript">
+function validate(){
+    x=document.myForm
+    input=x.myInput.value
+    if (input.length>10 || input.length<=3){
+        alert("Please have at least 3-10 characters long!")
+        return false
+    }else {
+        return true
+    }
+}
+</script>
 </head>
 <body style="background-color: #e6e6e6">
 <nav>
-<a href="SignUpLogin.html" class="signin-box">Sign in</a>
+<a href="SignUpLogin.html" class="signin-box">Sign up</a>
 </nav>
 <a href="home.html"><img class="img" src="/Codes/MaddrugsMd/Image/logo.png" title="Beta" /></a>
 <div class="title-box"><h1>HealthCheckMd</h1></div>
 <div class="menubox6">
 <nav>
 	<a href="SymptomsPage.html" class="menu">Check your symptoms</a>
-	<a href="Symptoms.html" class="menu">Symptoms</a>
+	<a href="Symptoms.html" class="menu">Seasonal disease</a>
 	<a href="Result.html" class="menu">Result</a>
 	<a href="DoctorSearch.html" class="menu">Doctor search</a>
 	<a href="AboutUs.html" class="menu">About us</a>
 </nav></div>
-	<form name="passForm" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+	<form name="myForm" action="http://www.java2s.com" onsubmit="return validate()">
 	<div class="conbox7">
 	<div class="wb-box">
 	<p>By law we are required to tell you that we are not responsible for any damages that may
@@ -32,7 +44,7 @@
 		<input type="text" name= "email" id="JFN" maxlength="5" size="10" required="required" />
 	</p>
 	<p><label for="userName">User name</label> 
-			<input type="text" name="User Name" id="userName" required="required" pattern="([a-zA-Z]*){1,19}"/>
+			<input type="text" name="myInput" id="userName" required="required" />
 	</p>
 	<p><label for="passInput">Password</label>
 		<input type="password" name="passInput" required="required" />
