@@ -1,0 +1,21 @@
+"use strict";
+
+
+
+
+
+
+function init(){
+	var jobform = document.getElementById("jobform");	
+	jobform.onsubmit = validate;
+	
+	
+	
+	
+	var btn = document.createElement("BUTTON");   // Create a <button> element
+	btn.innerHTML = "CLICK ME";                   // Insert text
+	document.body.appendChild(btn);  
+}
+window.onload = init;
+
+

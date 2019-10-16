@@ -8,3 +8,62 @@
 	<meta name="author"			content="Andrew Andrew" />
 		<link href="Styles/styless.css" rel="stylesheet" />
 </head>
+
+<body>
+
+<nav>
+	<a href="AboutUs.html" class="menu">About us</a>
+	<a href="DoctorSearch.html" class="menu">Doctor search</a>
+	<a href="SymptomsPage.html" class="menu">Check your symptoms</a>
+	<a href="Result.html" class="menu">Result</a>
+	<a href="" class="menu">Empty</a>
+</nav>
+
+<article class="class1">
+	<h2>Check your BMI here!</h2>
+	
+	<!--<form id="jobform" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post"> -->
+	<form id="BMIForm" action="" method="post">
+	
+	<p><label for="Height">Please enter your height: </label> 
+		<input type="text" name= "Height" id="Height" maxlength="5" size="10" required="required" pattern="([0-9]*)"/>
+	</p>
+	<p><label for="Weight">Please enter your weight:</label> 
+			<input type="text" name="Weight" id="Weight" required="required" pattern="([0-9]*)"/>
+	</p>
+	
+	
+	<input type="submit" value="Apply">
+	
+	
+	</form>
+	
+	<p id="Result">Your BMI is: </p>
+	
+	<script language = "JavaScript">
+
+		validate(){
+	
+		var Weight = document.getElementById('Weight').innerHTML;
+		var Height = document.getElementById('Height').innerHTML;
+		
+		var BMI = Weight * Height;
+		alert(BMI);
+		document.getElementById('Result').appendChild(BMI);
+		
+		return true;
+		} 
+		
+		
+		var BMIForm = document.getElementById("BMIForm").innerHTML;	
+		BMIForm.onsubmit = validate;
+	</script>
+	
+	
+	</article>
+
+
+</body>
+
+
+</html>
