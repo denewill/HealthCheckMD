@@ -116,10 +116,10 @@ margin:-8%;
 		}
 		
 .conbox {
-		width: 43%;
+		width: 43.9%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #3FABB3;
 		text-align: center;
 		max-width: 980px;
 		margin: -155px;
@@ -199,7 +199,7 @@ margin:-8%;
 		width: -40%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #3FABB3;
 		text-align: center;
 		max-width: 980px;
 		margin: -85px;
@@ -230,7 +230,7 @@ margin:-8%;
 		height: 30em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #7FB1B2;
 		text-align: left;
 		max-width: 980px;
 		margin: -20px;
@@ -242,16 +242,16 @@ margin:-8%;
 }
 
 .conbox4 {
-		width: 35%;
-		height: 10em;
+		width: 45%;
+		height: 20em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #7FB1B2;
 		text-align: left;
 		max-width: 980px;
 		margin: -20px;
 		margin-bottom: 40px;
-		margin-left: 29%;
+		margin-left: 24.7%;
 		margin-right: auto;
 		border: 2px solid black;
 		padding: 100px;
@@ -262,7 +262,7 @@ margin:-8%;
 		height: 60em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #7FB1B2;
 		text-align: left;
 		max-width: 980px;
 		margin: -20px;
@@ -278,7 +278,7 @@ margin:-8%;
 		height: 220em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #7FB1B2;
 		text-align: left;
 		max-width: 980px;
 		margin: -20px;
@@ -294,7 +294,7 @@ margin:-8%;
 		height: 15em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #7FB1B2;
 		text-align: left;
 		max-width: 980px;
 		margin: 50px;
@@ -309,7 +309,7 @@ margin:-8%;
 		height: 5em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #7FB1B2;
 		text-align: left;
 		max-width: 980px;
 		margin: 50px;
@@ -433,7 +433,7 @@ margin:-8%;
 .ad-box {
 		width: 45%;
 		float: right;
-		background-color: #666666;
+		background-color: #5C9505;
 		text-align: center;
 		margin: 2%;
 		margin-left: 7%;
@@ -469,11 +469,23 @@ margin:-8%;
 .wb-box {
 		width: 40%;
 		float: right;
-		background-color: #666666;
+		background-color: #C0D1A8;
 		text-align: center;
 		margin: 20px;
 		margin-left: 0px;
-		margin-right: -30px;
+		margin-right: 480px;
+		border: 2px solid black;
+		padding: 10px;
+}
+
+.wbb-box {
+		width: 40%;
+		float: right;
+		background-color: #C0D1A8;
+		text-align: center;
+		margin: 20px;
+		margin-left: 0px;
+		margin-right: 100px;
 		border: 2px solid black;
 		padding: 10px;
 }
@@ -493,7 +505,7 @@ margin:-8%;
 .wbz-box {
 		width: 40%;
 		float: right;
-		background-color: #666666;
+		background-color: #C0D1A8;
 		text-align: center;
 		margin: -20px;
 		margin-left: 0px;
@@ -586,7 +598,7 @@ margin:-8%;
 
 @media only screen and (max-width: 1920px) {
 	.conbox {
-		margin-left: 31%;
+		margin-left: 30.5%;
 	}
 	.conbox3 {
 		margin: -20px;
