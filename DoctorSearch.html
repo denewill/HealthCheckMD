@@ -9,8 +9,10 @@
 		<link href="Styles/styless.css" rel="stylesheet" />
 		<style>
 		#map {
-		width: 30%;
-        height: 70%;
+		width: 60%;
+        height: 90%;
+		position: relative;
+		margin-left: 21%;
       }
 
       html, body {
@@ -92,7 +94,7 @@
       }
     </style>
 </head>
-<body style="background-color: #e6e6e6">
+<body style="background-color: #A7D189">
 <nav>
 <a href="SignUpLogin.html" class="signin-box">Sign up</a>
 </nav>
@@ -106,12 +108,8 @@
 	<a href="DoctorSearch.html" class="menu">Doctor search</a>
 	<a href="AboutUs.html" class="menu">About us</a>
 </nav></div>
-	<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
 	<div class="conbox4">
-	<div class="wb-box">
-	<p>By law we are required to tell you that we are not responsible for any damages that may
-	be caused by our technicians.</p></div>
-	<h1>Search for a doctor</h1>
+	<h1 align="center">Search for a doctor</h1>
 	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
     <div id="map"></div>
 	<script>
@@ -168,7 +166,10 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCpZtSC9Ko08x-AsY0z_nxxFG9LLomNow&libraries=places&callback=initAutocomplete"
          async defer></script>
-	</form></div>
+	</div>
+	<div class="wb-box">
+	<p>By law we are required to tell you that we are not responsible for any damages that may
+	be caused by our technicians.</p></div>
 </body>
 <div class="ad-box"> 
 <p>Advertisement</p></div>
