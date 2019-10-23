@@ -18,6 +18,7 @@ function formSubmission() {
 	var desc1 = form.elements["desc1"].value;
 	var desc2 = form.elements["desc2"].value;
 	
+	
 	var query = "insert into medicalrecord (firstname,lastname,dob,gender,streetaddress,town,postcode,email,phonenumber,hiv,height,weight,currentdisease,sugarlevel,pastmedicalhistory,pastsurgery) values (" +
 		"'" + firstName + "'," +
 		"'" + lastName + "'," +
@@ -48,7 +49,7 @@ function formSubmission() {
 		}
 	);
 	
-	alert("Submitted!");
+	alert("You have submitted new record!");
 	
 	return true;
 }
