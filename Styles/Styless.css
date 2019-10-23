@@ -10,7 +10,51 @@ body {font-family: Merriweather, sans-serif; font-size: 12px; font-style: normal
 h2, h3, h4, h5. h6 {font-family:Times New Roman, Georgia, serif; font-style: normal;}
 h1 {font-family: Merriweather; font-size: 20px; font-style: bold;}
 footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
+html {background-color: #95D8EB;}
+a{text-decoration: none;}
 
+fieldset{
+	width: 20%;
+	margin-left: 270px;
+}
+input,textarea,#divs,#hiv {
+	width: 20%;
+	margin-left: 10px;
+	float:left;
+}
+table, th, td{
+	border:1px solid purple;
+}
+textarea{
+	width: 40%;
+}
+#SymptomButton,#SignUpButton{
+	margin-left: 290px;
+	width: 15%;
+}
+#SignupNow,#ResultTitle{
+	text-align: center;
+}
+#resultTable{
+	text-align: left;
+	margin-right: -50px;
+	float:right;
+}
+label{
+	width: 43%;
+    float: left;
+    text-align: right;
+}
+.gender{
+	width:170%;   	
+}
+#female, #male{
+	float: left;
+}
+
+#SymptomBox h2 {
+	color:maroon;
+}
 /*label{
 display:inline-block;
 width:200px;
@@ -27,7 +71,14 @@ border:none;
 width:500px;
 margin:-8%;
 }-->*/
-
+.formSymtom label{
+	display: inline-block;
+	text-align: right;
+}
+.formSymtom input{  
+ display: inline-block;
+	text-align: left;
+}
 
 .menu {
 		text-align: center;
@@ -77,14 +128,14 @@ margin:-8%;
 		letter-spacing: 0.1em;
 		color: black;
 		font-weight: bold;
-		background-color: #f2f2f2;
+		background-color: #A7D189;
 		margin: 20px;
 }
 
 .footerbox {
 		width: 100%;
 		float: right;
-		background-color: #666666;
+		background-color: #EDD75A;
 		text-align: center;
 		margin: 50px;
 		margin-left: 175px;
@@ -116,10 +167,10 @@ margin:-8%;
 		}
 		
 .conbox {
-		width: 43.9%;
+		width: 43%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #3FABB3;
+		background-color: #A7D189;
 		text-align: center;
 		max-width: 980px;
 		margin: -155px;
@@ -135,7 +186,7 @@ margin:-8%;
 		width: 40%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #A7D189;
 		text-align: center;
 		max-width: 980px;
 		margin-bottom: 80%;
@@ -151,7 +202,7 @@ margin:-8%;
 		width: -40%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #A7D189;
 		text-align: center;
 		max-width: 980px;
 		margin: -85px;
@@ -167,7 +218,7 @@ margin:-8%;
 		width: -40%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #A7D189;
 		text-align: center;
 		max-width: 980px;
 		margin: -85px;
@@ -183,7 +234,7 @@ margin:-8%;
 		width: -40%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #A7D189;
 		text-align: center;
 		max-width: 980px;
 		margin: -85px;
@@ -199,7 +250,7 @@ margin:-8%;
 		width: -40%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #3FABB3;
+		background-color: #A7D189;
 		text-align: center;
 		max-width: 980px;
 		margin: -85px;
@@ -215,7 +266,7 @@ margin:-8%;
 		width: 70%;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #737373;
+		background-color: #A7D189;
 		text-align: center;
 		max-width: 980px;
 		margin: 50px;
@@ -226,11 +277,11 @@ margin:-8%;
 }
 	
 .conbox3 {
-		width: 35%;
-		height: 30em;
+		width: 38%;
+		height: 43em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #7FB1B2;
+		background-color: #A7D189;
 		text-align: left;
 		max-width: 980px;
 		margin: -20px;
@@ -241,12 +292,12 @@ margin:-8%;
 		padding: 100px;
 }
 
-.conbox4 {
-		width: 45%;
-		height: 20em;
+#DoctorSearchBox,#ResultBox,#HomeBox {
+		width: 46%;
+		height: 30em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #7FB1B2;
+		background-color: #A7D189;
 		text-align: left;
 		max-width: 980px;
 		margin: -20px;
@@ -255,14 +306,45 @@ margin:-8%;
 		margin-right: auto;
 		border: 2px solid black;
 		padding: 100px;
+		text-align: center;
+		display: inline-block;
 }	
+#Ref{
+	font-family:Roboto;
+	font-weight:Bold;
+	font-size:20px;
+	color:purple;
+}
 
-.conbox5 {
-		width: 35%;
-		height: 60em;
+#Ref a:hover{
+	background-color:yellow;
+}
+
+.CheckSymptomBox {
+		width: 38%;
+		height: 70em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #7FB1B2;
+		background-color: #A7D189;
+		text-align: center;
+		max-width: 980px;
+		margin: -20px;
+		margin-bottom: 40px;
+		margin-left: 29%;
+		margin-right: auto;
+		border: 2px solid black;
+		padding: 100px;
+}	
+
+#SymptomBox h1{
+	text-align:center;
+}
+#SymptomBox {
+		width: 38%;
+		height: 250em;
+		float: left;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
+		background-color: #A7D189;
 		text-align: left;
 		max-width: 980px;
 		margin: -20px;
@@ -273,43 +355,28 @@ margin:-8%;
 		padding: 100px;
 }	
 
-.conbox6 {
-		width: 35%;
-		height: 220em;
+.SignInUpBox {
+		width: 38%;
+		height: 35em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #7FB1B2;
+		background-color: #A7D189;
 		text-align: left;
 		max-width: 980px;
 		margin: -20px;
 		margin-bottom: 40px;
 		margin-left: 29%;
-		margin-right: auto;
-		border: 2px solid black;
-		padding: 100px;
-}	
-
-.conbox7 {
-		width: 40%;
-		height: 15em;
-		float: left;
-		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #7FB1B2;
-		text-align: left;
-		max-width: 980px;
-		margin: 50px;
-		margin-left: 26.6%;
 		margin-right: auto;
 		border: 2px solid black;
 		padding: 100px;
 }	
 
 .conbox8 {
-		width: 20%;
+		width: 38%;
 		height: 5em;
 		float: left;
 		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-		background-color: #7FB1B2;
+		background-color: #A7D189;
 		text-align: left;
 		max-width: 980px;
 		margin: 50px;
@@ -349,9 +416,7 @@ margin:-8%;
 	max-width: 100%;
 	height: auto;
 	position: relative;
-	margin-right: auto;
-	margin-left: 33.7%;
-}	
+	}	
 
 .img2 {
 		background-image: 0 !important;
@@ -433,9 +498,9 @@ margin:-8%;
 .ad-box {
 		width: 45%;
 		float: right;
-		background-color: #5C9505;
+		background-color: #666666;
 		text-align: center;
-		margin: 2%;
+		margin: 5%;
 		margin-left: 7%;
 		margin-right: auto;
 		border: 2px solid black;
@@ -457,7 +522,7 @@ margin:-8%;
 .w-box {
 		width: 40%;
 		float: right;
-		background-color: #666666;
+		background-color: #EDD75A;
 		text-align: center;
 		margin: 50px;
 		margin-left: 0px;
@@ -467,64 +532,15 @@ margin:-8%;
 }
 
 .wb-box {
-		width: 40%;
-		float: right;
-		background-color: #C0D1A8;
-		text-align: center;
-		margin: 20px;
-		margin-left: 0px;
-		margin-right: 480px;
+		width:20%;
+		left: 60%;		
+		margin-left:40%;
+		background-color: #EDD75A;
 		border: 2px solid black;
 		padding: 10px;
 }
 
-.wbb-box {
-		width: 40%;
-		float: right;
-		background-color: #C0D1A8;
-		text-align: center;
-		margin: 20px;
-		margin-left: 0px;
-		margin-right: 100px;
-		border: 2px solid black;
-		padding: 10px;
-}
 
-.wbx-box {
-		width: 40%;
-		float: right;
-		background-color: #666666;
-		text-align: center;
-		margin: 50px;
-		margin-left: 0px;
-		margin-right: 120px;
-		border: 2px solid black;
-		padding: 10px;
-}
-
-.wbz-box {
-		width: 40%;
-		float: right;
-		background-color: #C0D1A8;
-		text-align: center;
-		margin: -20px;
-		margin-left: 0px;
-		margin-right: -50px;
-		border: 2px solid black;
-		padding: 10px;
-}
-
-.wby-box {
-		width: 40%;
-		float: right;
-		background-color: #666666;
-		text-align: center;
-		margin: -70px;
-		margin-left: 0px;
-		margin-right: 28%;
-		border: 2px solid black;
-		padding: 10px;
-}
 
 .signin-box {
 		text-align: center;
@@ -535,7 +551,7 @@ margin:-8%;
 		letter-spacing: 0.1em;
 		color: black;
 		font-weight: bold;
-		background-color: #f2f2f2;
+		background-color: #A7D189;
 		margin-bottom: 3%;
 		float: right;
 }
@@ -576,16 +592,6 @@ margin:-8%;
 		margin-left: 33%;
 		margin-right: auto;
 	}
-	.menubox6 {
-		margin: -85px;
-		margin-left: 33.5%;
-		margin-right: auto;
-	}
-	.conbox8 {
-		margin: 50px;
-		margin-left: 34.5%;
-		margin-right: auto;
-	}
 	.title-box4 {
 		margin: -10%;
 		margin-top: 5%;
@@ -598,7 +604,7 @@ margin:-8%;
 
 @media only screen and (max-width: 1920px) {
 	.conbox {
-		margin-left: 30.5%;
+		margin-left: 31%;
 	}
 	.conbox3 {
 		margin: -20px;
@@ -662,6 +668,91 @@ margin:-8%;
 	.ad-box-2 {
 		margin-right: 21.6%;
 	}
-}		
+}	
+
+	#map {
+		width: 60%;
+        height: 90%;
+		position: relative;
+		margin-left: 21%;
+      }
+
+      html, body {
+        height: 70%;
+        margin: 0;
+        padding: 0;
+      }
+
+	#description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+    #infowindow-content .title {
+        font-weight: bold;
+      }
+
+    #infowindow-content {
+        display: none;
+      }
+
+    #map #infowindow-content {
+        display: inline;
+    }
+
+    .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+    }
+
+    #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+    }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+    }
+
+    .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
+
+    #pac-input:focus {
+        border-color: #4d90fe;
+    }
+
+    #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+    }
+
+    #target {
+        width: 345px;
+    }	
 		
 	
