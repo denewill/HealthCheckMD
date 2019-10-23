@@ -5,174 +5,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"	content="Home page" />
 	<meta name="keywords"		content="HTML, CSS, Javascript" />
-	<meta name="author"			content="Andrew Andrew" />
+	<meta name="author"			content="Vy Nguyen" />
 		<link href="Styles/styless.css" rel="stylesheet" />
-		<style>
-		#map {
-		width: 60%;
-        height: 90%;
-		position: relative;
-		margin-left: 21%;
-      }
 
-      html, body {
-        height: 70%;
-        margin: 0;
-        padding: 0;
-      }
-
-      #description {
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-      }
-
-      #infowindow-content .title {
-        font-weight: bold;
-      }
-
-      #infowindow-content {
-        display: none;
-      }
-
-      #map #infowindow-content {
-        display: inline;
-      }
-
-      .pac-card {
-        margin: 10px 10px 0 0;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        background-color: #fff;
-        font-family: Roboto;
-      }
-
-      #pac-container {
-        padding-bottom: 12px;
-        margin-right: 12px;
-      }
-
-      .pac-controls {
-        display: inline-block;
-        padding: 5px 11px;
-      }
-
-      .pac-controls label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-
-      #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 200px;
-      }
-
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
-
-      #title {
-        color: #fff;
-        background-color: #4d90fe;
-        font-size: 25px;
-        font-weight: 500;
-        padding: 6px 12px;
-      }
-
-      #target {
-        width: 345px;
-      }
-    </style>
 </head>
-<body style="background-color: #A7D189">
-<nav>
-<a href="SignUpLogin.html" class="signin-box">Sign up</a>
-</nav>
-<a href="home.html"><img class="img" src="/Codes/MaddrugsMd/Image/logo.png" title="Beta" /></a>
-<div class="title-box"><h1>HealthCheckMd</h1></div>
-<div class="conbox">
-<nav>
-	<a href="SymptomsPage.html" class="menu">Check your symptoms</a>
-	<a href="Symptoms.html" class="menu">Seasonal disease</a>
-	<a href="Result.html" class="menu">Result</a>
-	<a href="DoctorSearch.html" class="menu">Doctor search</a>
-	<a href="AboutUs.html" class="menu">About us</a>
-</nav></div>
-	<div class="conbox4">
-	<h1 align="center">Search for a doctor</h1>
-	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    <div id="map"></div>
-	<script>
-      function initAutocomplete() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13,
-          mapTypeId: 'roadmap'
-        });
-        var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-        map.addListener('bounds_changed', function() {
-          searchBox.setBounds(map.getBounds());
-        });
-        var markers = [];
-        searchBox.addListener('places_changed', function() {
-          var places = searchBox.getPlaces();
-          if (places.length == 0) {
-            return;
-          }
-          markers.forEach(function(marker) {
-            marker.setMap(null);
-          });
-          markers = [];
-          var bounds = new google.maps.LatLngBounds();
-          places.forEach(function(place) {
-            if (!place.geometry) {
-              console.log("Returned place contains no geometry");
-              return;
-            }
-            var icon = {
-              url: place.icon,
-              size: new google.maps.Size(71, 71),
-              origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25)
-            };
-            markers.push(new google.maps.Marker({
-              map: map,
-              icon: icon,
-              title: place.name,
-              position: place.geometry.location
-            }));
-            if (place.geometry.viewport) {         
-              bounds.union(place.geometry.viewport);
-            } else {
-              bounds.extend(place.geometry.location);
-            }
-          });
-          map.fitBounds(bounds);
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCpZtSC9Ko08x-AsY0z_nxxFG9LLomNow&libraries=places&callback=initAutocomplete"
-         async defer></script>
+<body>
+	<nav>
+	<a href="SignUpLogin.html" class="signin-box">Sign up</a>
+	</nav>
+	<a href="home.html"><img class="img" src="Image/logo.png" title="Beta" /></a>
+	<div class="title-box"><h1>HealthCheckMd</h1></div>
+	<div class="conbox">
+		<nav>
+			<a href="SymptomsPage.html" class="menu">Check your symptoms</a>
+			<a href="Symptoms.html" class="menu">Seasonal disease</a>
+			<a href="Result.html" class="menu">Result</a>
+			<a href="DoctorSearch.html" class="menu">Doctor search</a>
+			<a href="AboutUs.html" class="menu">About us</a>
+		</nav>
 	</div>
+	<div id="DoctorSearchBox">
+	<h1>Search for a doctor</h1>
+	<hr/><br/><br/><br/>
+	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+	<div id="map"></div>
+	
+	<br/><br/><br/><br/>
 	<div class="wb-box">
 	<p>By law we are required to tell you that we are not responsible for any damages that may
-	be caused by our technicians.</p></div>
+	be caused by our technicians.</p>
+	</div>
+	
+		<script>
+		  function initAutocomplete() {
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  center: {lat: -33.8688, lng: 151.2195},
+			  zoom: 13,
+			  mapTypeId: 'roadmap'
+			});
+			var input = document.getElementById('pac-input');
+			var searchBox = new google.maps.places.SearchBox(input);
+			map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+			map.addListener('bounds_changed', function() {
+			  searchBox.setBounds(map.getBounds());
+			});
+			var markers = [];
+			searchBox.addListener('places_changed', function() {
+			  var places = searchBox.getPlaces();
+			  if (places.length == 0) {
+				return;
+			  }
+			  markers.forEach(function(marker) {
+				marker.setMap(null);
+			  });
+			  markers = [];
+			  var bounds = new google.maps.LatLngBounds();
+			  places.forEach(function(place) {
+				if (!place.geometry) {
+				  console.log("Returned place contains no geometry");
+				  return;
+				}
+				var icon = {
+				  url: place.icon,
+				  size: new google.maps.Size(71, 71),
+				  origin: new google.maps.Point(0, 0),
+				  anchor: new google.maps.Point(17, 34),
+				  scaledSize: new google.maps.Size(25, 25)
+				};
+				markers.push(new google.maps.Marker({
+				  map: map,
+				  icon: icon,
+				  title: place.name,
+				  position: place.geometry.location
+				}));
+				if (place.geometry.viewport) {         
+				  bounds.union(place.geometry.viewport);
+				} else {
+				  bounds.extend(place.geometry.location);
+				}
+			  });
+			  map.fitBounds(bounds);
+			});
+		  }
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCpZtSC9Ko08x-AsY0z_nxxFG9LLomNow&libraries=places&callback=initAutocomplete"
+			 async defer></script>	 
+	</div>
+
+<br>
+	<div class="ad-box"> 
+	<p>Advertisement</p>
+	</div>
 </body>
-<div class="ad-box"> 
-<p>Advertisement</p></div>
-
-
 </html>
