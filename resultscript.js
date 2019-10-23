@@ -31,7 +31,8 @@ function makeList(array) {
 	var xco114 = header.insertCell(13).innerHTML = "Sugar Level";
 	var xco115 = header.insertCell(14).innerHTML = "Past Medical History";
 	var xco116 = header.insertCell(15).innerHTML = "Past Surgery";
-	
+	var xco117 = header.insertCell(16).innerHTML = "Email";
+
 	
 	for(var i = 0; i < array.length; i++) {
 		console.log(array[i]);
@@ -53,6 +54,7 @@ function makeList(array) {
 		var co114 = row.insertCell(13).innerHTML = array[i].sugarlevel;
 		var co115 = row.insertCell(14).innerHTML = array[i].pastmedicalhistory;
 		var co116 = row.insertCell(15).innerHTML = array[i].pastsurgery;
+		var co117 = row.insertCell(16).innerHTML = array[i].email;
 
 		
 	}

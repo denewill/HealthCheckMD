@@ -8,6 +8,7 @@
 	<meta name="author"			content="Andrew Andrew and Vy Nguyen" />
 	<link href="Styles/styless.css" rel="stylesheet" />
 	<script src="https://mysqljs.com/mysql.js"></script>
+
 </head>
 
 <body>
@@ -37,7 +38,7 @@
 		
 		<br/><hr/><br/><br/>
 		
-		<form method="post">
+		<form id="myform" onsubmit="return formSubmission()">
 		
 		<div class="formSymtom">
 		
@@ -50,7 +51,7 @@
 			</p>
 			<br/>
 			<p><label for="applyDate">Date of birth</label>
-			<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" value="01/01/2000"  min="01/01/1890" max="30/10/2019" pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" required="required"/>
+			<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" value="01/01/2000"  min="01/01/1890" max="30/10/2019" pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" title="Must be from 01/01/1890 to 30/10/2019" required="required"/>
 			</p>
 			
 			<br/><br/><br/><br/>
@@ -75,7 +76,7 @@
 			<br/>
 			
 			<p><label for="userEmail">Email</label>
-			<input type="email" id="userEmail" placeholder="abc@gmail.com" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Fill in correct email format only">
+			<input type="email"  id="userEmail" placeholder="abc@gmail.com" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Fill in correct email format only">
 			</p>
 			<br/>
 			<p><label for="pNumber">Phone number</label>
@@ -91,11 +92,11 @@
 			</p>
 			<br/>
 			<p><label for="height">Height in (cm)</label>
-					<input type="number" name="Height" id="height" placeholder="160" min="50" max="280" title="Must be in a range of 50 to 280" required="required"/>
+					<input type="number" name="Height" id="height" placeholder="160" min="45" max="280" title="Must be in a range of 50 to 280" required="required"/>
 			</p>
 			<br/>
 			<p><label for="weight">Weight (kg)</label>
-					<input type="number" name="Weight" id="weight" placeholder="70" min="3" max="700" title="Must be in a range of 2 to 700" required="required"/>
+					<input type="number" name="Weight" id="weight" placeholder="70" min="2" max="700" title="Must be in a range of 2 to 700" required="required"/>
 			</p>
 			<br/>
 			<p><label for="divs">Current disease</label>
@@ -122,14 +123,12 @@
 				<textarea placeholder="Types of medicines" id="desc2" name="desc2" rows="4" cols="50"></textarea>
 			</p>
 			<br/><br/><br/>
-	</div>
+		</div>
 	<br/><br/><br/>
 	<hr/>
 	<br/><br/><br/>
-	<input id="SymptomButton" type="submit" value="Apply" />
+	<input id="SymptomButton" type="submit" value="Submit" />
 	</form>
-	</div>
-	</footer>
 	<script src="formscript.js">
 	</script>
 </body>
