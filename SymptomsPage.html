@@ -42,15 +42,15 @@
 		<div class="formSymtom">
 		
 			<p><label for="firstName">First Name</label> 
-					<input type="text" name="First Name" id="firstName" placeholder="John" required="required" pattern="([a-zA-Z]*){2,19}"/>
+					<input type="text" name="First Name" id="firstName" placeholder="John" required="required" pattern="([a-zA-Z]*){2,19}" title="Fill in letters only"/>
 			</p>
 			<br/>
 			<p><label for="lastName">Last Name</label>
-				<input type="text" name="Last Name" id="lastName" placeholder="Smith" required="required" pattern="([a-zA-Z]*){2,19}"/>
+				<input type="text" name="Last Name" id="lastName" placeholder="Smith" required="required" pattern="([a-zA-Z]*){2,19}" title="Fill in letters only"/>
 			</p>
 			<br/>
 			<p><label for="applyDate">Date of birth</label>
-			<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" required="required"/>
+			<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" value="01/01/2000"  min="01/01/1890" max="30/10/2019" pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" required="required"/>
 			</p>
 			
 			<br/><br/><br/><br/>
@@ -62,24 +62,24 @@
 			<br/>
 			
 			<p><label for="streetAdd">Street Address</label> 
-					<input type="text" name="Street Address" id="streetAdd" placeholder="10 Batman street" required="required" pattern="([0-9a-zA-Z]){1,39}"/>
+					<input type="text" name="Street Address" id="streetAdd" placeholder="10 Batman street" required="required" pattern="([0-9a-zA-Z ]*){1,39}"/>
 			</p>
 			<br/>
 			<p><label for="subTown">Suburb/town</label>
-				<input type="text" name="Suburb/town" id="subTown" placeholder="Sunshine" required="required" pattern="([a-zA-Z]*){1,20}"/>
+				<input type="text" name="Suburb/town" id="subTown" placeholder="Sunshine" required="required" pattern="([a-zA-Z]*){1,20}" />
 			</p>
 			<br/>
 			<p><label for="postcode">Postcode</label>
-					<input type="text" name="Postcode" id="postcode" placeholder="3020" required="required" pattern="\d{4}"/>
+					<input type="text" name="Postcode" id="postcode" placeholder="3020" required="required" pattern="\d{4}" title="Fill in 4 digit postcode only"/>
 			</p>
 			<br/>
 			
 			<p><label for="userEmail">Email</label>
-			<input type="email" id="userEmail" placeholder="abc@gmail.com" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+			<input type="email" id="userEmail" placeholder="abc@gmail.com" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Fill in correct email format only">
 			</p>
 			<br/>
 			<p><label for="pNumber">Phone number</label>
-					<input type="text" name="Phone Number" id="pNumber" placeholder="0422123123" pattern="\d{10}" required="required"/>
+					<input type="text" name="Phone Number" id="pNumber" placeholder="0422123123" pattern="\d{10}" required="required" title="Fill in phone number only"/>
 			</p>
 			<br/>
 			<p><label for="hiv">Do you have HIV/AIDS?</label>
@@ -91,11 +91,11 @@
 			</p>
 			<br/>
 			<p><label for="height">Height in (cm)</label>
-					<input type="number" name="Height" id="height" placeholder="160" pattern="\d{2,3}" required="required"/>
+					<input type="number" name="Height" id="height" placeholder="160" min="50" max="280" title="Must be in a range of 50 to 280" required="required"/>
 			</p>
 			<br/>
 			<p><label for="weight">Weight (kg)</label>
-					<input type="number" name="Weight" id="weight" placeholder="70" pattern="\d{2,3}" required="required"/>
+					<input type="number" name="Weight" id="weight" placeholder="70" min="3" max="700" title="Must be in a range of 2 to 700" required="required"/>
 			</p>
 			<br/>
 			<p><label for="divs">Current disease</label>

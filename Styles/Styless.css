@@ -292,7 +292,7 @@ margin:-8%;
 		padding: 100px;
 }
 
-#DoctorSearchBox,#ResultBox {
+#DoctorSearchBox,#ResultBox,#HomeBox {
 		width: 46%;
 		height: 30em;
 		float: left;
@@ -416,9 +416,7 @@ margin:-8%;
 	max-width: 100%;
 	height: auto;
 	position: relative;
-	margin-right: auto;
-	margin-left: 33.7%;
-}	
+	}	
 
 .img2 {
 		background-image: 0 !important;
