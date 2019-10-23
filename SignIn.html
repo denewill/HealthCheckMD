@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description"	content="Home page" />
-	<meta name="keywords"		content="HTML, CSS, Javascript" />
-	<meta name="author"			content="Andrew Andrew" />
-	<link href="Styles/styless.css" rel="stylesheet" />
-	<script>
-function myFunction() {
-  alert("You have signed in!");
-  }
-</script>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description"	content="Home page" />
+		<meta name="keywords"		content="HTML, CSS, Javascript" />
+		<meta name="author"			content="Andrew Andrew" />
+		<link href="Styles/styless.css" rel="stylesheet" />
+		<script>
+			function myFunction() {
+			  alert("You have signed in!");
+			}
+		</script>
+	</head>
 	
-</head>
-<body style="background-color: #A7D189">
-<a href="home.html"><img class="img" src="/Codes/MaddrugsMd/Image/logo.png" title="Beta" /></a>
-<div class="title-box2"><h1>HealthCheckMd</h1></div>
-	<form action="Symptoms.html" method="post">
-	<div class="conbox8">
-	<div class="wbz-box">
-	<p>By law we are required to tell you that we are not responsible for any damages that may
-	be caused by our technicians.</p></div>
-	<p><label for="email">Email/Username: </label> 
-		<input type="email" name= "email" id="username" maxlength="30" size="10" required="required" />
-	<p><label for="pssword">Password</label>
-		<input type="password" name="Password" id="pssword" maxlength="20" size="17" required="required" pattern="([a-zA-Z]*){1,19}"/>
-	</p><br><br>
-	<button onclick="myFunction()">Sign in</button>
-	<input type="button" value="Back" onclick="window.location.href='file:///C:/Codes/MaddrugsMd/SignUpLogin.html'" />
-	</div></form>
-	<div class="ad-box"> 
-	<p>Advertisement</p></div>
-</body>
+	<body>
+		<nav>
+			<a href="SignUpLogin.html" class="signin-box">Sign up</a>
+		</nav>
+		<a href="home.html"><img class="img" src="Image/logo.png" title="Beta" /></a>
+		<div class="title-box"><h1>HealthCheckMd</h1></div>
+		<div class="conbox">
+			<nav>
+				<a href="SymptomsPage.html" class="menu">Check your symptoms</a>
+				<a href="Symptoms.html" class="menu">Seasonal disease</a>
+				<a href="Result.html" class="menu">Result</a>
+				<a href="DoctorSearch.html" class="menu">Doctor search</a>
+				<a href="AboutUs.html" class="menu">About us</a>
+			</nav>
+		</div>
+		
+		<div class="SignInUpBox">
+			<h1 id="SignupNow">Welcome back!</h1>
+			<br/><br/><hr/><br/><br/>
+				<form name="myForm" action="Symptoms.html" onsubmit="return(validate()&&checkPassword(myForm))">
+						<p><label for="userName">User name</label> 
+								<input type="text" name="myInput" id="userName" required="required" />
+						</p>
+						<br/>
+						
+						<p><label for="passInput">Password</label>
+							<input type="password" name="passInput" required="required" />
+						</p>
+						<br/><br/><br/><br/>
+						
+						<button id="SignUpButton" onclick="myFunction()">Sign in</button>	
+			<br/><br/><br/><br/><br/><br/>
+			<div class="wb-box">
+				<p>By law we are required to tell you that we are not responsible for any damages that may
+				be caused by our technicians.</p>
+			</div>
+		</div>
+	</form>
+		<div class="ad-box"> 
+		<p>Advertisement</p></div>
+	</body>
 </html>
