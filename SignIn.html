@@ -7,6 +7,7 @@
 		<meta name="keywords"		content="HTML, CSS, Javascript" />
 		<meta name="author"			content="Andrew Andrew" />
 		<link href="Styles/styless.css" rel="stylesheet" />
+		<script src="https://mysqljs.com/mysql.js"></script>
 	</head>
 	
 	<body>
@@ -28,9 +29,9 @@
 		<div class="SignInUpBox">
 			<h1 id="SignupNow">Welcome back!</h1>
 			<br/><br/><hr/><br/><br/>
-				<form name="myForm" action="Symptoms.html" onsubmit="return(validate()&&checkPassword(myForm))">
-						<p><label for="email">Email</label> 
-								<input type="text" name="myInput" id="email" required="required" />
+				<form id="myform" action="Symptoms.html" onsubmit="return checkPassword()">
+						<p><label for="userName">User name</label> 
+								<input type="text" name="usernameInput" id="userName" required="required" />
 						</p>
 						<br/>
 						
@@ -39,13 +40,14 @@
 						</p>
 						<br/><br/><br/><br/>
 						
-						<button id="SignUpButton" onclick="myFunction()">Sign in</button>	
+						<input id="SignInButton" type="submit" value="Sign in" />
 			<br/><br/><br/><br/><br/><br/>
 			<div class="wb-box">
 				<p>By law we are required to tell you that we are not responsible for any damages that may
 				be caused by our technicians.</p>
 			</div>
 		</div>
+		<script src="signinscript.js"> </script>
 	</form>
 		<div class="ad-box"> 
 		<p>Advertisement</p></div>

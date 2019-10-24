@@ -17,7 +17,7 @@ function formSubmission() {
 	var sugar = form.elements["suga"].value;
 	var desc1 = form.elements["desc1"].value;
 	var desc2 = form.elements["desc2"].value;
-	
+	var userid = localStorage.getItem("maddrugs");
 	
 	var query = "insert into medicalrecord (firstname,lastname,dob,gender,streetaddress,town,postcode,email,phonenumber,hiv,height,weight,currentdisease,sugarlevel,pastmedicalhistory,pastsurgery) values (" +
 		"'" + firstName + "'," +
@@ -37,19 +37,24 @@ function formSubmission() {
 		"'" + desc1 + "'," +
 		"'" + desc2 + "')";
 	
-	MySql.Execute(
-		"sql12.freemysqlhosting.net",
-		"sql12309203",
-		"x7LvCC4Wyq",
-		"sql12309203",
-		query,
-		function (data) {
-			console.log("Submitted");
-			console.log(data);
-		}
-	);
-	
-	alert("You have submitted new record!");
-	
-	return true;
+	//only let the user enters when they have signed in
+	if( userid != null ) {
+		MySql.Execute(
+			"sql12.freemysqlhosting.net",
+			"sql12309203",
+			"x7LvCC4Wyq",
+			"sql12309203",
+			query,
+			function (data) {
+				console.log("Submitted");
+				console.log(data);
+			}
+		);
+		alert("You have submitted new record!");
+		return true;
+	}
+	else{
+		alert("Please login first");
+		return false;
+	}
 }

@@ -7,28 +7,9 @@
 	<meta name="keywords"		content="HTML, CSS, Javascript" />
 	<meta name="author"			content="Vy Nguyen" />
 	<link href="Styles/styless.css" rel="stylesheet" />
-	<script>
-		var checkPassword = function() {
-			if (document.getElementById('Password').value.length!=0 || 
-			document.getElementById('ConfirmPassword').value.length!=0){
-				  if (document.getElementById('Password').value ==
-					document.getElementById('ConfirmPassword').value) {
-					document.getElementById('message').style.color = 'green';
-					document.getElementById('message').innerHTML = 'matched.';
-				} 
-				  else {
-					document.getElementById('message').style.color = 'red';
-					document.getElementById('message').innerHTML = 'not matching.';
-				}
-			}
-			else{
-				document.getElementById('message').innerHTML = 'Fill in password.';
-			}
-		}
-	</script>
+	<script src="https://mysqljs.com/mysql.js"></script>
 </head>
 
-<script src="https://mysqljs.com/mysql.js"></script>
 
 <body>
 
@@ -50,18 +31,15 @@
 		<div class="SignInUpBox">
 		<h1 id="SignupNow">Join us now!</h1>
 			<br/><br/><hr/><br/><br/>
-			<p><label for="email">Email: </label> 
-				<input type="text" name= "email" id="email" maxlength="20" size="10" required="required" />
-			</p>
 			<p><label for="userName">User name</label> 
 				<input type="text" name="userName" id="userName" required="required" />
 			</p>
 			<p><label for="Password">Password</label>
-				<input type="password" name="Password" id="Password" required="required" onkeyup='checkPassword();'/>
+				<input type="password" name="Password" id="Password" required="required"/>
 			</p>
 			
 			<p><label for="ConfirmPassword">Repeat Password</label>
-				<input type="password" name="ConfirmPassword" id="ConfirmPassword" required="required" onkeyup='checkPassword();'/>
+				<input type="password" name="ConfirmPassword" id="ConfirmPassword" required="required"/>
 			</p>
 				<br/> <br/> <br/><br/><br/>
 			 <span id='message'></span>

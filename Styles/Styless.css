@@ -28,7 +28,7 @@ table, th, td{
 textarea{
 	width: 40%;
 }
-#SymptomButton,#SignUpButton{
+#SymptomButton,#SignUpButton,#SignInButton{
 	margin-left: 290px;
 	width: 15%;
 }

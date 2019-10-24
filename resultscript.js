@@ -1,13 +1,31 @@
-MySql.Execute(
-	"sql12.freemysqlhosting.net",
-	"sql12309203",
-	"x7LvCC4Wyq",
-	"sql12309203",
-	"select * from medicalrecord",
-	function (data) {
-		makeList(data.Result);
-	}
-);
+
+//check if it is admin. admin id is 4
+if (localStorage.getItem("maddrugs")==4){
+	MySql.Execute(
+		"sql12.freemysqlhosting.net",
+		"sql12309203",
+		"x7LvCC4Wyq",
+		"sql12309203",
+		"select * from medicalrecord;",
+		function (data) {
+			makeList(data.Result);
+		}
+	);
+}
+else{
+	MySql.Execute(
+		"sql12.freemysqlhosting.net",
+		"sql12309203",
+		"x7LvCC4Wyq",
+		"sql12309203",
+		"select * from medicalrecord where userid = " + localStorage.getItem("maddrugs") + ";",
+		function (data) {
+			makeList(data.Result);
+		}
+	);
+}
+
+
 
 function makeList(array) {
 	var table = document.getElementById("resultTable")
@@ -31,8 +49,6 @@ function makeList(array) {
 	var xco114 = header.insertCell(13).innerHTML = "Sugar Level";
 	var xco115 = header.insertCell(14).innerHTML = "Past Medical History";
 	var xco116 = header.insertCell(15).innerHTML = "Past Surgery";
-	var xco117 = header.insertCell(16).innerHTML = "Email";
-
 	
 	for(var i = 0; i < array.length; i++) {
 		console.log(array[i]);
@@ -54,8 +70,5 @@ function makeList(array) {
 		var co114 = row.insertCell(13).innerHTML = array[i].sugarlevel;
 		var co115 = row.insertCell(14).innerHTML = array[i].pastmedicalhistory;
 		var co116 = row.insertCell(15).innerHTML = array[i].pastsurgery;
-		var co117 = row.insertCell(16).innerHTML = array[i].email;
-
-		
 	}
 }
