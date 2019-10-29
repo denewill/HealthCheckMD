@@ -8,10 +8,30 @@
 		<meta name="author"  	 content="Andrew Andrew" />
 		<title>The Beta Company job applicants</title>
 		<link href="Styles/Styless.css" rel="stylesheet" />
+			<script>
+		window.onload=BoxVisible;
+		function BoxVisible() {
+			var userid = localStorage.getItem("maddrugs");
+			var logoutbt=document.getElementById("logout-box");
+			var loginbt=document.getElementById("signin-box");
+			if (userid!=null){
+			logoutbt.style.visibility = "visible";
+			loginbt.style.visibility="hidden";
+			}
+			else{
+			logoutbt.style.visibility = "hidden";
+			loginbt.style.visibility="visible";
+			}
+		}
+	</script>
+
 </head>
 <body>
 <nav>
-	<a href="SignUpLogin.html" class="signin-box">Sign up</a>
+	<a href="Logout.html" id="logout-box">Log out</a>
+	<a href="SignUpLogin.html" id="signin-box">Sign up</a>
+
+
 	</nav>
 	<a href="home.html"><img class="img" src="Image/logo.png" title="Beta" /></a>
 	<div class="title-box"><h1>HealthCheckMd</h1></div>

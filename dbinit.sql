@@ -1,3 +1,19 @@
+/*
+DB INFO
+Username: Onut0apAOd
+
+Database name: Onut0apAOd
+
+Password: kHKpw4tYSY
+
+Server: remotemysql.com
+
+Port: 3306
+
+
+*/
+
+
 create database if not exists mydb;
 use sql12309203;
 create table if not exists `medicalrecord`(

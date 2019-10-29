@@ -5,12 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"	content="Home page" />
 	<meta name="keywords"		content="HTML, CSS, Javascript" />
-	<meta name="author"			content="Andrew Andrew" />
-		<link href="Styles/styless.css" rel="stylesheet" />
+	<meta name="author"			content="Andrew, Michelle" />
+	<link href="Styles/styless.css" rel="stylesheet" />
+
+	<script>
+		window.onload=BoxVisible;
+		function BoxVisible() {
+			var userid = localStorage.getItem("maddrugs");
+			var logoutbt=document.getElementById("logout-box");
+			var loginbt=document.getElementById("signin-box");
+			if (userid!=null){
+			logoutbt.style.visibility = "visible";
+			loginbt.style.visibility="hidden";
+			}
+			else{
+			logoutbt.style.visibility = "hidden";
+			loginbt.style.visibility="visible";
+			}
+		}
+	</script>
 </head>	
 <body>
 <nav>
-<a href="SignUpLogin.html" class="signin-box">Sign up</a>
+<a href="Logout.html" id="logout-box">Log out</a>
+<a href="SignUpLogin.html" id="signin-box">Sign up</a>
+
 </nav>
 <a href="home.html"><img class="img" src="Image/logo.png" title="Beta" /></a>
 <div class="title-box"><h1>HealthCheckMd</h1></div>
@@ -25,41 +44,37 @@
 </div>
 <div id="SymptomBox">
 <article>
+<button onclick="topFunction()" id="TopButton" title="To top">To top</button>
+<script>
+var mybutton = document.getElementById("TopButton");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 <h1>Common Diseases</h1>
 <div id="Ref">
-  <a href="#Acne">1. Acne</a><br />
-  <a href="#Asthma">2. Asthma</a><br />
-  <a href="#Burns">3. Burns</a><br />
-  <a href="#CankerSores">4. Canker sores</a><br />
-  <a href="#Flu">5. Flu</a><br />
+  <a href="#Asthma">1. Asthma</a><br />
+  <a href="#Burns">2. Burns</a><br />
+  <a href="#CankerSores">3. Canker sores</a><br />
+  <a href="#Flu">4. Flu</a><br />
  </div>
   <br/><br/>
   <hr/>
-<a name= "Acne"> <h2>1. Acne</h2> </a>
-<p>Acne is a skin condition that occurs when your hair follicles become plugged with oil and dead skin cells. It often causes whiteheads, blackheads or pimples, and usually appears on the face, forehead, chest, upper back and shoulders. Acne is most common among teenagers, though it affects people of all ages.</p>
-<h3>Symptoms:</h3>
-<ul>
-	<li>Whiteheads</li>
-	<li>Blackheads</li>
-	<li>Small red, tender bumps</li>
-	<li>Pimples</li>
-	<li>Large, solid, painful lumps beneath the surface of the skin</li>
-	<li>Painful, pis-filled lumps beneath the surface of the skin</li>
-</ul>
-<h3>Causes:</h3>
-<ul>
-	<li>Excess oil production</li>
-	<li>Hair folicles clogged by oil and dead skin cells</li>
-	<li>Bacteria</li>
-	<li>Excess activity of a type of hormone</li>
-</ul>
-<p>Acne typically appears on your face, forehead, chest, upper back and shoulders because these areas of skin have the most oil (sebaceous) glands. Hair follicles are connected to oil glands.</p>
-<h3>Treatment:</h3>
-<p>Some acne treatments can be bought over the counter at pharmacies or supermarkets. These work by cleaning the skin and drying up excess oil. Mild irritation can occur with such treatments. If this happens, take a short break from treatment and restart after a few days. If the irritation is excessive, stop the medication and speak to your doctor about an alternative.<br><br>
-It is a good idea to talk to a pharmacist before you buy a product to find out which treatment might be the most useful for you. If your acne is not improving with over-the-counter treatments or if you have more severe forms of acne, you will need to see your doctor.</p>
-<br/><br/>
-<hr>
-<a name= "Asthma"> <h2>2. Asthma</h2></a>
+
+<a name= "Asthma"> <h2>1. Asthma</h2></a>
 <p >Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing difficult and trigger coughing, wheezing and shortness of breath.
 For some people, asthma is a minor nuisance. For others, it can be a major problem that interferes with daily activities and may lead to a life-threatening asthma attack.
 Asthma can't be cured, but its symptoms can be controlled. Because asthma often changes over time, it's important that you work with your doctor to track your signs and symptoms and adjust treatment as needed.
@@ -88,7 +103,7 @@ Asthma can't be cured, but its symptoms can be controlled. Because asthma often 
 </ul>
 <br/><br/>
 <hr>
-<a name= "Burns"> <h2>3. Burns</h2></a>
+<a name= "Burns"> <h2>2. Burns</h2></a>
 <p>Burns are one of the most common household injuries, especially among children. The term “burn” means more than the burning sensation associated with this injury. Burns are characterized by severe skin damage that causes the affected skin cells to die.Most people can recover from burns without serious health consequences, depending on the cause and degree of injury.</p>
 <h3>Symptoms:</h3>
 <p >There are three primary types of burns: first-, second-, and third-degree. Each degree is based on the severity of damage to the skin, with first-degree being the most minor and third-degree being the most severe. Damage includes:</p>
@@ -116,7 +131,7 @@ Asthma can't be cured, but its symptoms can be controlled. Because asthma often 
 <p >Make sure you don’t use ice, as this may make the damage worse. Never apply cotton balls to a burn because the small fibers can stick to the injury and increase the risk of infection. Also, avoid home remedies like butter and eggs as these are not proven to be effective.</p>
 <br/><br/>
 <hr>
-<a name= "CankerSores"> <h2>4. Canker sores</h2></a>
+<a name= "CankerSores"> <h2>3. Canker sores</h2></a>
 <p >Canker sores, also called aphthous ulcers, are small, shallow lesions that develop on the soft tissues in your mouth or at the base of your gums. Unlike cold sores, canker sores don't occur on the surface of your lips and they aren't contagious. They can be painful, however, and can make eating and talking difficult.
 Most canker sores go away on their own in a week or two. Check with your doctor or dentist if you have unusually large or painful canker sores or canker sores that don't seem to heal.
 </p>
@@ -145,7 +160,7 @@ Possible triggers for canker sores include:
 </ul>
 <br/><br/>
 <hr>
-<a name= "Flu"> <h2>5. Flu</h3></a>
+<a name= "Flu"> <h2>4. Flu</h3></a>
 <h3>Symptoms:</h3>
 <p >People who have flu often feel some or all of these symptoms:</p>
 <ul>
