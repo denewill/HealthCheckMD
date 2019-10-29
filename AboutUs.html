@@ -7,10 +7,29 @@
 	<meta name="keywords"		content="HTML, CSS, Javascript" />
 	<meta name="author"			content="Andrew Andrew" />
 		<link href="Styles/styless.css" rel="stylesheet" />
+			<script>
+		window.onload=BoxVisible;
+		function BoxVisible() {
+			var userid = localStorage.getItem("maddrugs");
+			var logoutbt=document.getElementById("logout-box");
+			var loginbt=document.getElementById("signin-box");
+			if (userid!=null){
+			logoutbt.style.visibility = "visible";
+			loginbt.style.visibility="hidden";
+			}
+			else{
+			logoutbt.style.visibility = "hidden";
+			loginbt.style.visibility="visible";
+			}
+		}
+	</script>
+
 </head>	
 <body>
 <nav>
-<a href="SignUpLogin.html" class="signin-box">Sign up</a>
+<a href="Logout.html" id="logout-box">Log out</a>
+<a href="SignUpLogin.html" id="signin-box">Sign up</a>
+
 </nav>
 <a href="home.html"><img class="img" src="Image/logo.png" title="Beta" /></a>
 <div class="title-box"><h1>HealthCheckMd</h1></div>
@@ -52,13 +71,6 @@ The contents of this website are not intended to substitute for professional med
  Never disregard or delay seeking professional medical advice or treatment because of something you have read on the this website.
  </p>
  
- <p>
- Below are the links to the project management tools used throughout the initial development.
- </p>
- 
- <p>
- ADD LINKS
- </p>
  
 <br/><br/><br/><br/><br/><br/>
 <p style="font-size: 10px">Swinburne University of Technology, Created by Andrew 101902097, David Stare 102079989, Vy Nguyen 101578430& Michelle Chuwindra 101721043, 30/9/2019

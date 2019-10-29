@@ -19,7 +19,7 @@ function formSubmission() {
 	var desc2 = form.elements["desc2"].value;
 	var userid = localStorage.getItem("maddrugs");
 	
-	var query = "insert into medicalrecord (firstname,lastname,dob,gender,streetaddress,town,postcode,email,phonenumber,hiv,height,weight,currentdisease,sugarlevel,pastmedicalhistory,pastsurgery) values (" +
+	var query = "insert into medicalrecord (firstname,lastname,dob,gender,streetaddress,town,postcode,email,phonenumber,hiv,height,weight,currentdisease,sugarlevel,pastmedicalhistory,pastsurgery, userid) values (" +
 		"'" + firstName + "'," +
 		"'" + lastName + "'," +
 		"'" + dob + "'," +
@@ -35,15 +35,16 @@ function formSubmission() {
 		"'" + diseases + "'," +
 		"'" + sugar + "'," +
 		"'" + desc1 + "'," +
-		"'" + desc2 + "')";
+		"'" + desc2 + "'," +
+		"'" + userid + "')";
 	
 	//only let the user enters when they have signed in
 	if( userid != null ) {
 		MySql.Execute(
-			"sql12.freemysqlhosting.net",
-			"sql12309203",
-			"x7LvCC4Wyq",
-			"sql12309203",
+			"remotemysql.com",
+			"Onut0apAOd",
+			"kHKpw4tYSY",
+			"Onut0apAOd",
 			query,
 			function (data) {
 				console.log("Submitted");

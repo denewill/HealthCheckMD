@@ -8,12 +8,30 @@
 	<meta name="author"			content="Andrew Andrew and Vy Nguyen" />
 	<link href="Styles/styless.css" rel="stylesheet" />
 	<script src="https://mysqljs.com/mysql.js"></script>
+		<script>
+		window.onload=BoxVisible;
+		function BoxVisible() {
+			var userid = localStorage.getItem("maddrugs");
+			var logoutbt=document.getElementById("logout-box");
+			var loginbt=document.getElementById("signin-box");
+			if (userid!=null){
+			logoutbt.style.visibility = "visible";
+			loginbt.style.visibility="hidden";
+			}
+			else{
+			logoutbt.style.visibility = "hidden";
+			loginbt.style.visibility="visible";
+			}
+		}
+	</script>
+
 
 </head>
 
 <body>
 	<nav>
-	<a href="SignUpLogin.html" class="signin-box">Sign up</a>
+	<a href="Logout.html" id="logout-box">Log out</a>
+	<a href="SignUpLogin.html" id="signin-box">Sign up</a>
 	</nav>
 	<a href="home.html"><img class="img" src="Image/logo.png" title="Beta" /></a>
 	<div class="title-box"><h1>HealthCheckMd</h1></div>
@@ -43,7 +61,7 @@
 		<div class="formSymtom">
 		
 			<p><label for="firstName">First Name</label> 
-					<input type="text" name="First Name" id="firstName" placeholder="John" required="required" pattern="([a-zA-Z]*){2,19}" title="Fill in letters only"/>
+					<input type="text" name="First Name" id="firstName" placeholder="John" required="required" pattern="([a-zA-Z ]*){2,19}" title="Fill in letters only"/>
 			</p>
 			<br/>
 			<p><label for="lastName">Last Name</label>
@@ -51,7 +69,8 @@
 			</p>
 			<br/>
 			<p><label for="applyDate">Date of birth</label>
-			<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" value="01/01/2000"  min="01/01/1890" max="30/10/2019" pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" title="Must be from 01/01/1890 to 30/10/2019" required="required"/>
+			<input type="text" name="date" id="applyDate" placeholder="dd/mm/yyyy" value="01/01/2000"  min="01/01/1890" max="30/10/2019" 
+			pattern="([012]?[0-9]|3?[01])/(0?[0-9]|1?[012])/\d{4}" title="Must be from 01/01/1890 to 30/10/2019" required="required"/>
 			</p>
 			
 			<br/><br/><br/><br/>

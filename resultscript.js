@@ -2,10 +2,10 @@
 //check if it is admin. admin id is 4
 if (localStorage.getItem("maddrugs")==4){
 	MySql.Execute(
-		"sql12.freemysqlhosting.net",
-		"sql12309203",
-		"x7LvCC4Wyq",
-		"sql12309203",
+		"remotemysql.com",
+		"Onut0apAOd",
+		"kHKpw4tYSY",
+		"Onut0apAOd",
 		"select * from medicalrecord;",
 		function (data) {
 			makeList(data.Result);
@@ -14,10 +14,10 @@ if (localStorage.getItem("maddrugs")==4){
 }
 else{
 	MySql.Execute(
-		"sql12.freemysqlhosting.net",
-		"sql12309203",
-		"x7LvCC4Wyq",
-		"sql12309203",
+		"remotemysql.com",
+		"Onut0apAOd",
+		"kHKpw4tYSY",
+		"Onut0apAOd",
 		"select * from medicalrecord where userid = " + localStorage.getItem("maddrugs") + ";",
 		function (data) {
 			makeList(data.Result);
@@ -48,7 +48,7 @@ function makeList(array) {
 	var xco113 = header.insertCell(12).innerHTML = "Current Disease";
 	var xco114 = header.insertCell(13).innerHTML = "Sugar Level";
 	var xco115 = header.insertCell(14).innerHTML = "Past Medical History";
-	var xco116 = header.insertCell(15).innerHTML = "Past Surgery";
+	var xco116 = header.insertCell(15).innerHTML = "Taking Medicine";
 	
 	for(var i = 0; i < array.length; i++) {
 		console.log(array[i]);

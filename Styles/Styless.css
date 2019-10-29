@@ -6,19 +6,32 @@ last modified: ???
 description: To design the imagery of the MadDrugsMD website
 */
 
-body {font-family: Merriweather, sans-serif; font-size: 12px; font-style: normal;}
+body {
+	font-family: Merriweather, sans-serif; 
+	font-size: 12px; 
+	font-style: normal;
+	}
+html{
+	background-image: url("Images/bg1.png");
+	background-repeat: repeat;
+	}
 h2, h3, h4, h5. h6 {font-family:Times New Roman, Georgia, serif; font-style: normal;}
 h1 {font-family: Merriweather; font-size: 20px; font-style: bold;}
 footer {font-family: Merriweather; font-size: 12px; font-style: normal;}
 html {background-color: #95D8EB;}
 a{text-decoration: none;}
-
+#Bye{
+	size:10px;
+	font-family:Times New Roman;
+	text-align:center;
+}
 fieldset{
 	width: 20%;
 	margin-left: 270px;
 }
 input,textarea,#divs,#hiv {
 	width: 20%;
+	
 	margin-left: 10px;
 	float:left;
 }
@@ -28,8 +41,8 @@ table, th, td{
 textarea{
 	width: 40%;
 }
-#SymptomButton,#SignUpButton,#SignInButton{
-	margin-left: 290px;
+#SymptomButton,#SignUpButton,#SignInButton,#LogOutButton{
+	margin-left: 250px;
 	width: 15%;
 }
 #SignupNow,#ResultTitle{
@@ -39,6 +52,25 @@ textarea{
 	text-align: left;
 	margin-right: -50px;
 	float:right;
+}
+#TopButton{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#TopButton:hover{
+	background-color:#555;
 }
 label{
 	width: 43%;
@@ -55,31 +87,21 @@ label{
 #SymptomBox h2 {
 	color:maroon;
 }
-/*label{
-display:inline-block;
-width:200px;
-margin-right:5%;
-text-align:right;
-}-->
 
-<!--input{
-
-}-->
-
-<!--fieldset{
-border:none;
-width:500px;
-margin:-8%;
-}-->*/
 .formSymtom label{
 	display: inline-block;
 	text-align: right;
 }
 .formSymtom input{  
- display: inline-block;
+	display: inline-block;
 	text-align: left;
 }
-
+.title-box{
+	margin-right:15%;
+}
+.title-boxInUp{
+	margin-right:20.9%;
+}
 .menu {
 		text-align: center;
 		width: 100%;
@@ -437,60 +459,13 @@ margin:-8%;
 		padding: 20px;
 }
 
-.title-box {
+.title-box,.title-boxInUp {
 		width: 37%;
 		float: right;
 		background-color: #C7EA89;
 		text-align: center;
 		color: #323430;
 		font-size: larger%;
-		margin-top: 1%;
-		margin-left: auto;
-		margin-right: 23%;
-		border: 2px solid black;
-		padding: 20px;
-}
-
-.title-box3 {
-		width: 30%;
-		float: right;
-		background-color: #C7EA89;
-		text-align: center;
-		color: #323430;
-		font-size: larger%;
-		margin: 9%;
-		margin-top: 5%;
-		margin-left: 0%;
-		margin-right: 24.8%;
-		border: 2px solid black;
-		padding: 20px;
-}
-
-.title-box2 {
-		width: 30%;
-		float: right;
-		background-color: #C7EA89;
-		text-align: center;
-		color: #323430;
-		font-size: larger%;
-		margin: 2%;
-		margin-left: 0px;
-		margin-right: 33%;
-		border: 2px solid black;
-		padding: 20px;
-}
-
-.title-box4 {
-		width: 30%;
-		float: right;
-		background-color: #C7EA89;
-		text-align: center;
-		color: #323430;
-		font-size: larger%;
-		margin: -10%;
-		margin-top: 5%;
-		margin-left: 0px;
-		margin-right: 33.7%;
 		border: 2px solid black;
 		padding: 20px;
 }
@@ -542,8 +517,9 @@ margin:-8%;
 
 
 
-.signin-box {
+#signin-box,#logout-box {
 		text-align: center;
+		display: block;
 		border: 2px solid black;
 		width: 5%;
 		padding: 0 15px 0 15px;
@@ -554,8 +530,8 @@ margin:-8%;
 		background-color: #A7D189;
 		margin-bottom: 3%;
 		float: right;
+		
 }
-
 
 @media only screen and (max-width: 1600px) {
 	.conbox {
@@ -566,21 +542,11 @@ margin:-8%;
 		margin-bottom: 40px;
 		margin-left: 29%;
 	}
-	.title-box {
-		margin-top: 1%;
-		margin-left: 0%;
-		margin-right: 21.6%;
-	}
+	
 	.menubox2 {
 		margin: -85px;
 		margin-left: 33%;
 		margin-right: auto;
-	}
-	.title-box3 {
-		margin: -10%;
-		margin-top: 5%;
-		margin-left: 0px;
-		margin-right: 22.7%;
 	}
 	.menubox4 {
 		margin: -85px;
@@ -591,12 +557,6 @@ margin:-8%;
 		margin: -85px;
 		margin-left: 33%;
 		margin-right: auto;
-	}
-	.title-box4 {
-		margin: -10%;
-		margin-top: 5%;
-		margin-left: 0px;
-		margin-right: 31.3%;
 	}
 		
 }
@@ -612,21 +572,10 @@ margin:-8%;
 		margin-left: 29%;
 		margin-right: auto;
 	}
-	.title-box {
-		margin-top: 1%;
-		margin-left: 0px;
-		margin-right: 21%;
-	}
 	.menubox2 {
 		margin: -85px;
 		margin-left: 30.6%;
 		margin-right: auto;
-	}
-	.title-box3 {
-		margin: -10%;
-		margin-top: 5%;
-		margin-left: 0px;
-		margin-right: 22.7%;
 	}
 	.menubox4 {
 		margin: -85px;
@@ -647,17 +596,6 @@ margin:-8%;
 		margin: 50px;
 		margin-left: 34.5%;
 		margin-right: auto;
-	}
-	.title-box4 {
-		margin: -10%;
-		margin-top: 5%;
-		margin-left: 0px;
-		margin-right: 31.3%;
-	}
-	.title-box2 {
-		margin-top: 3%;
-		margin-left: 0px;
-		margin-right: 32.51%;
 	}
 	.img1 {
 		margin-left: 31.5%;
@@ -743,13 +681,7 @@ margin:-8%;
         border-color: #4d90fe;
     }
 
-    #title {
-        color: #fff;
-        background-color: #4d90fe;
-        font-size: 25px;
-        font-weight: 500;
-        padding: 6px 12px;
-    }
+
 
     #target {
         width: 345px;
